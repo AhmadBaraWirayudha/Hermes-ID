@@ -1,0 +1,58 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\title{Debug Report}
+\author{IndoMarket Insight}
+\date{20260708_100634}
+\begin{document}
+\maketitle
+
+\section*{Executive Summary}
+\begin{itemize}
+    \item Rows: 20
+    \item Items: 5
+    \item Regions: 1
+    \item Latest date: 2026-03-13
+    \item Average latest price: Rp12.673
+    \item Detected anomalies: 0
+    \item Data quality score: 84/100
+\end{itemize}
+
+\section*{Data Quality Notes}
+\begin{itemize}
+\item Latest data is 117 days old
+\end{itemize}
+
+\section*{Latest Market Values}
+\begin{longtable}{llllr}
+\toprule
+Date & Item & Region & Category & Price \\
+\midrule
+2026-03-13 00:00:00 & Minyak Goreng & Indonesia & commodity & Rp18.135 \\ 
+2026-03-13 00:00:00 & Gula Pasir & Indonesia & commodity & Rp16.640 \\ 
+2026-03-13 00:00:00 & Beras Premium & Indonesia & commodity & Rp15.663 \\ 
+2026-03-13 00:00:00 & BBCA.JK & Indonesia & idx\_stock & Rp9.846 \\ 
+2026-03-13 00:00:00 & TLKM.JK & Indonesia & idx\_stock & Rp3.083 \\ 
+\bottomrule
+\end{longtable}
+
+\section*{Detected Anomalies}
+\begin{longtable}{llllr}
+\toprule
+Date & Item & Region & Price & Z-score \\
+\midrule
+\multicolumn{5}{l}{No anomalies detected} \\ 
+\bottomrule
+\end{longtable}
+
+\section*{Methodology}
+The report is generated automatically from the local SQLite observations and processed CSV files. Indicators include moving averages, percentage change, rolling volatility, and z-score based anomaly detection. Google Trends data, if present, is represented as a 0--100 search interest index.
+
+\section*{Compliance Note}
+Scraping should use official APIs, permitted CSV downloads, or pages allowed by each website's terms and robots.txt policies.
+
+\end{document}

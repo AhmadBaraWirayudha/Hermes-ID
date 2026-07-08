@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "default_region": "Indonesia",
+  "default_currency": "IDR",
+  "scrape_delay_seconds": 1.0,
+  "respect_robots": true,
+  "api_token_enabled": false,
+  "api_token_env": "INDOMARKET_API_TOKEN",
+  "webhook_url": "",
+  "smtp": {
+    "enabled": false,
+    "host": "",
+    "port": 587,
+    "username": "",
+    "password_env": "INDOMARKET_SMTP_PASSWORD",
+    "from_email": "",
+    "to_email": ""
+  }
+}

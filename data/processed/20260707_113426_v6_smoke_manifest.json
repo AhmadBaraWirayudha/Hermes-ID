@@ -1,0 +1,24 @@
+{
+  "basename": "v6_smoke",
+  "created_at": "20260707_113426",
+  "rows": 5,
+  "columns": [
+    "id",
+    "date",
+    "source",
+    "category",
+    "item",
+    "region",
+    "price",
+    "volume",
+    "metric",
+    "currency",
+    "raw_payload",
+    "created_at",
+    "price_idr"
+  ],
+  "files": {
+    "csv": "/home/user/indomarket_insight/data/processed/20260707_113426_v6_smoke.csv",
+    "xlsx": "/home/user/indomarket_insight/data/processed/20260707_113426_v6_smoke.xlsx"
+  }
+}

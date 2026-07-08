@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Antara Terkini RSS",
+    "url": "https://www.antaranews.com/rss/terkini.xml",
+    "source_type": "rss",
+    "category": "indonesia_news",
+    "country": "ID",
+    "active": true,
+    "crawl_depth": 0,
+    "notes": "Public RSS feed. Verify current terms before production use."
+  },
+  {
+    "name": "Antara Ekonomi RSS",
+    "url": "https://www.antaranews.com/rss/ekonomi.xml",
+    "source_type": "rss",
+    "category": "indonesia_economy",
+    "country": "ID",
+    "active": true,
+    "crawl_depth": 0,
+    "notes": "Public RSS feed. Verify current terms before production use."
+  },
+  {
+    "name": "Bank Indonesia Web",
+    "url": "https://www.bi.go.id/",
+    "source_type": "web",
+    "category": "macro_policy",
+    "country": "ID",
+    "active": false,
+    "crawl_depth": 0,
+    "notes": "Prefer official RSS or API where available."
+  },
+  {
+    "name": "IDX Web",
+    "url": "https://www.idx.co.id/",
+    "source_type": "web",
+    "category": "capital_market",
+    "country": "ID",
+    "active": false,
+    "crawl_depth": 0,
+    "notes": "Review IDX data and website terms before production use."
+  }
+]

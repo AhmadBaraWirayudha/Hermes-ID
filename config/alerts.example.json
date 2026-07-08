@@ -1,0 +1,12 @@
+{
+  "stale_days_max": 14,
+  "quality_score_min": 75,
+  "zscore_abs_max": 2.5,
+  "daily_pct_change_abs_max": 0.1,
+  "price_min_by_item": {
+    "Beras Premium": 12000
+  },
+  "price_max_by_item": {
+    "Beras Premium": 25000
+  }
+}

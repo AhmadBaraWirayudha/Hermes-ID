@@ -1,0 +1,8 @@
+demo_if_empty: true
+run_sources: false
+category: market
+region: Indonesia
+export: true
+report: both
+alerts: true
+schedule_hint: "Run with cron, Task Scheduler, or GitHub Actions. Example: python app/pipeline.py --demo-if-empty --alerts --export --report both"

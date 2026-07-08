@@ -1,0 +1,6 @@
+id,date,source,category,item,region,price,volume,metric,currency,raw_payload,created_at,price_idr
+1,2026-03-10,demo,commodity,Beras Premium,Indonesia,15794.5,,price,IDR,,2026-07-07 04:13:35,Rp15.794
+121,2026-03-10,demo,commodity,Minyak Goreng,Indonesia,18288.0,,price,IDR,,2026-07-07 04:13:35,Rp18.288
+241,2026-03-10,demo,commodity,Gula Pasir,Indonesia,16318.5,,price,IDR,,2026-07-07 04:13:35,Rp16.318
+361,2026-03-10,demo,idx_stock,BBCA.JK,Indonesia,9657.6,,price,IDR,,2026-07-07 04:13:35,Rp9.658
+481,2026-03-10,demo,idx_stock,TLKM.JK,Indonesia,3059.7,,price,IDR,,2026-07-07 04:13:35,Rp3.060

@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password_hash": "generate with: python -c \"import sys; sys.path.insert(0,'app'); from security import hash_password; print(hash_password('change-me'))\"",
+      "roles": ["admin"],
+      "active": true
+    }
+  ]
+}

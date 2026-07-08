@@ -1,0 +1,42 @@
+[
+  {
+    "name": "example_public_csv",
+    "url": "https://example.com/market-data.csv",
+    "source_type": "csv_url",
+    "table_index": 0,
+    "notes": "Replace with an allowed public CSV/API endpoint or your own export URL.",
+    "active": false
+  },
+  {
+    "name": "example_html_table",
+    "url": "https://example.com/page-with-table",
+    "source_type": "html_table",
+    "table_index": 0,
+    "notes": "Check robots.txt and terms before enabling.",
+    "active": false
+  },
+  {
+    "name": "example_selector_scrape",
+    "url": "https://example.com/products",
+    "source_type": "html_selectors",
+    "table_index": 0,
+    "notes": "{\"container\":\".product\",\"item\":\".name\",\"price\":\".price\",\"date\":\".date\"}",
+    "active": false
+  },
+  {
+    "name": "example_rss_news",
+    "url": "https://example.com/rss.xml",
+    "source_type": "rss_feed",
+    "table_index": 0,
+    "notes": "RSS items become article_count observations.",
+    "active": false
+  },
+  {
+    "name": "example_sitemap",
+    "url": "https://example.com/sitemap.xml",
+    "source_type": "sitemap",
+    "table_index": 0,
+    "notes": "/produk/",
+    "active": false
+  }
+]

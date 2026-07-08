@@ -1,0 +1,280 @@
+{
+  "created_at": "2026-07-08T03:38:45.545676+00:00",
+  "root": "/home/user/indomarket_insight",
+  "python": "3.13.13 (main, Apr  8 2026, 17:46:54) [GCC 14.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+  "ok": 36,
+  "failed": 9,
+  "checks": [
+    {
+      "name": "directory data/raw",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/data/raw",
+      "fix": ""
+    },
+    {
+      "name": "directory data/processed",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/data/processed",
+      "fix": ""
+    },
+    {
+      "name": "directory models",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/models",
+      "fix": ""
+    },
+    {
+      "name": "directory logs",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/logs",
+      "fix": ""
+    },
+    {
+      "name": "directory config",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/config",
+      "fix": ""
+    },
+    {
+      "name": "directory backups",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/backups",
+      "fix": ""
+    },
+    {
+      "name": "file app/main.py",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/app/main.py",
+      "fix": ""
+    },
+    {
+      "name": "file app/api.py",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/app/api.py",
+      "fix": ""
+    },
+    {
+      "name": "file requirements.txt",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/requirements.txt",
+      "fix": ""
+    },
+    {
+      "name": "file sql/schema.sql",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/sql/schema.sql",
+      "fix": ""
+    },
+    {
+      "name": "file START_INDOMARKET_WINDOWS.cmd",
+      "ok": true,
+      "detail": "/home/user/indomarket_insight/START_INDOMARKET_WINDOWS.cmd",
+      "fix": ""
+    },
+    {
+      "name": "core dependency pandas",
+      "ok": true,
+      "detail": "installed",
+      "fix": ""
+    },
+    {
+      "name": "core dependency numpy",
+      "ok": true,
+      "detail": "installed",
+      "fix": ""
+    },
+    {
+      "name": "core dependency streamlit",
+      "ok": false,
+      "detail": "No module named 'streamlit'",
+      "fix": "Run pip install -r requirements.txt"
+    },
+    {
+      "name": "core dependency plotly",
+      "ok": true,
+      "detail": "installed",
+      "fix": ""
+    },
+    {
+      "name": "core dependency sklearn",
+      "ok": true,
+      "detail": "installed",
+      "fix": ""
+    },
+    {
+      "name": "core dependency requests",
+      "ok": true,
+      "detail": "installed",
+      "fix": ""
+    },
+    {
+      "name": "core dependency bs4",
+      "ok": true,
+      "detail": "installed",
+      "fix": ""
+    },
+    {
+      "name": "optional dependency fastapi",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency uvicorn",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency reportlab",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency pytrends",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency pyarrow",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency sqlalchemy",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency redis",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency boto3",
+      "ok": false,
+      "detail": "not installed or unavailable",
+      "fix": "Install requirements if feature is needed"
+    },
+    {
+      "name": "optional dependency prometheus_client",
+      "ok": true,
+      "detail": "installed",
+      "fix": ""
+    },
+    {
+      "name": "app import db",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import scraper",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import analytics",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import quality",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import alerts",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import scenario",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import data_studio",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import sentiment",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import security",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "app import storage_layer",
+      "ok": true,
+      "detail": "ok",
+      "fix": ""
+    },
+    {
+      "name": "sqlite schema",
+      "ok": true,
+      "detail": "sources,sqlite_sequence,market_observations,scrape_runs",
+      "fix": ""
+    },
+    {
+      "name": "port 8501",
+      "ok": true,
+      "detail": "free",
+      "fix": ""
+    },
+    {
+      "name": "port 8000",
+      "ok": true,
+      "detail": "free",
+      "fix": ""
+    },
+    {
+      "name": "port 80",
+      "ok": true,
+      "detail": "free",
+      "fix": ""
+    },
+    {
+      "name": "port 9090",
+      "ok": true,
+      "detail": "free",
+      "fix": ""
+    },
+    {
+      "name": "port 3000",
+      "ok": true,
+      "detail": "free",
+      "fix": ""
+    },
+    {
+      "name": "no em dash",
+      "ok": true,
+      "detail": "[]",
+      "fix": ""
+    },
+    {
+      "name": "no emoji",
+      "ok": true,
+      "detail": "[]",
+      "fix": ""
+    }
+  ]
+}

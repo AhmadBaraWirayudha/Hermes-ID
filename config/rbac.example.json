@@ -1,0 +1,8 @@
+{
+  "roles": {
+    "admin": ["*"],
+    "analyst": ["read", "forecast", "report", "export"],
+    "operator": ["read", "scrape", "export"],
+    "viewer": ["read"]
+  }
+}

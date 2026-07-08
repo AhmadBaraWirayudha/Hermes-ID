@@ -1,0 +1,10 @@
+[
+  {
+    "name": "example_csv_source",
+    "url": "https://example.com/data.csv",
+    "source_type": "csv_url",
+    "table_index": 0,
+    "notes": "placeholder",
+    "active": 0
+  }
+]

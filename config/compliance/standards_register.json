@@ -1,0 +1,13 @@
+{
+  "standards": [
+    {"name": "ISO/IEC 27001", "domain": "security", "status": "mapped"},
+    {"name": "ISO/IEC 27701", "domain": "privacy", "status": "mapped"},
+    {"name": "ISO 31000", "domain": "risk", "status": "mapped"},
+    {"name": "ISO/IEC 22301", "domain": "business_continuity", "status": "mapped"},
+    {"name": "NIST CSF 2.0", "domain": "cybersecurity", "status": "mapped"},
+    {"name": "CIS Controls v8", "domain": "cybersecurity", "status": "mapped"},
+    {"name": "OWASP Top 10", "domain": "application_security", "status": "mapped"},
+    {"name": "ISO/IEC 42001", "domain": "ai_governance", "status": "mapped"},
+    {"name": "OpenAPI", "domain": "api", "status": "implemented"}
+  ]
+}

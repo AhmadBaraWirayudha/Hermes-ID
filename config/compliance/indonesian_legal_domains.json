@@ -1,0 +1,20 @@
+{
+  "disclaimer": "Operational map only, not legal advice.",
+  "domains": [
+    "personal_data_protection",
+    "electronic_system_provider",
+    "capital_markets",
+    "financial_services",
+    "market_data_licensing",
+    "commodities_and_futures",
+    "banking_and_payment_systems",
+    "consumer_protection",
+    "trade_and_ecommerce",
+    "competition",
+    "tax",
+    "intellectual_property",
+    "aml_cft",
+    "cybersecurity",
+    "third_party_risk"
+  ]
+}

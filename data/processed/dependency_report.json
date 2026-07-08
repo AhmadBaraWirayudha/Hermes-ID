@@ -1,0 +1,197 @@
+{
+  "created_at": "2026-07-08T03:38:44.000145+00:00",
+  "dependencies": [
+    {
+      "package": "streamlit",
+      "module": "streamlit",
+      "installed": false,
+      "detail": "No module named 'streamlit'"
+    },
+    {
+      "package": "pandas",
+      "module": "pandas",
+      "installed": true,
+      "detail": "2.2.3"
+    },
+    {
+      "package": "numpy",
+      "module": "numpy",
+      "installed": true,
+      "detail": "2.3.5"
+    },
+    {
+      "package": "plotly",
+      "module": "plotly",
+      "installed": true,
+      "detail": "6.0.1"
+    },
+    {
+      "package": "requests",
+      "module": "requests",
+      "installed": true,
+      "detail": "2.33.0"
+    },
+    {
+      "package": "beautifulsoup4",
+      "module": "bs4",
+      "installed": true,
+      "detail": "4.14.3"
+    },
+    {
+      "package": "lxml",
+      "module": "lxml",
+      "installed": true,
+      "detail": "6.1.1"
+    },
+    {
+      "package": "scikit_learn",
+      "module": "sklearn",
+      "installed": true,
+      "detail": "1.6.1"
+    },
+    {
+      "package": "joblib",
+      "module": "joblib",
+      "installed": true,
+      "detail": "1.5.3"
+    },
+    {
+      "package": "apscheduler",
+      "module": "apscheduler",
+      "installed": false,
+      "detail": "No module named 'apscheduler'"
+    },
+    {
+      "package": "python_dateutil",
+      "module": "dateutil",
+      "installed": true,
+      "detail": "2.9.0.post0"
+    },
+    {
+      "package": "pytz",
+      "module": "pytz",
+      "installed": true,
+      "detail": "2025.2"
+    },
+    {
+      "package": "openpyxl",
+      "module": "openpyxl",
+      "installed": true,
+      "detail": "3.1.5"
+    },
+    {
+      "package": "urllib3",
+      "module": "urllib3",
+      "installed": true,
+      "detail": "2.7.0"
+    },
+    {
+      "package": "pytrends",
+      "module": "pytrends",
+      "installed": false,
+      "detail": "No module named 'pytrends'"
+    },
+    {
+      "package": "feedparser",
+      "module": "feedparser",
+      "installed": false,
+      "detail": "No module named 'feedparser'"
+    },
+    {
+      "package": "reportlab",
+      "module": "reportlab",
+      "installed": false,
+      "detail": "No module named 'reportlab'"
+    },
+    {
+      "package": "notebook",
+      "module": "notebook",
+      "installed": false,
+      "detail": "No module named 'notebook'"
+    },
+    {
+      "package": "matplotlib",
+      "module": "matplotlib",
+      "installed": true,
+      "detail": "3.10.9"
+    },
+    {
+      "package": "pytest",
+      "module": "pytest",
+      "installed": true,
+      "detail": "9.0.3"
+    },
+    {
+      "package": "fastapi",
+      "module": "fastapi",
+      "installed": false,
+      "detail": "No module named 'fastapi'"
+    },
+    {
+      "package": "uvicorn",
+      "module": "uvicorn",
+      "installed": false,
+      "detail": "No module named 'uvicorn'"
+    },
+    {
+      "package": "pyyaml",
+      "module": "pyyaml",
+      "installed": false,
+      "detail": "No module named 'pyyaml'"
+    },
+    {
+      "package": "pyarrow",
+      "module": "pyarrow",
+      "installed": false,
+      "detail": "No module named 'pyarrow'"
+    },
+    {
+      "package": "sentry_sdk",
+      "module": "sentry_sdk",
+      "installed": false,
+      "detail": "No module named 'sentry_sdk'"
+    },
+    {
+      "package": "sqlalchemy",
+      "module": "sqlalchemy",
+      "installed": false,
+      "detail": "No module named 'sqlalchemy'"
+    },
+    {
+      "package": "psycopg2_binary",
+      "module": "psycopg2",
+      "installed": false,
+      "detail": "No module named 'psycopg2'"
+    },
+    {
+      "package": "redis",
+      "module": "redis",
+      "installed": false,
+      "detail": "No module named 'redis'"
+    },
+    {
+      "package": "prometheus_client",
+      "module": "prometheus_client",
+      "installed": true,
+      "detail": "unknown"
+    },
+    {
+      "package": "alembic",
+      "module": "alembic",
+      "installed": false,
+      "detail": "No module named 'alembic'"
+    },
+    {
+      "package": "pydantic",
+      "module": "pydantic",
+      "installed": true,
+      "detail": "2.13.4"
+    },
+    {
+      "package": "boto3",
+      "module": "boto3",
+      "installed": false,
+      "detail": "No module named 'boto3'"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+id,date,source,category,item,region,price,volume,metric,currency,raw_payload,created_at,price_idr
+1,2026-03-10,demo,commodity,Beras Premium,Indonesia,15794.5,,price,IDR,,2026-07-07 04:13:35,Rp15.794
+121,2026-03-10,demo,commodity,Minyak Goreng,Indonesia,18288.0,,price,IDR,,2026-07-07 04:13:35,Rp18.288
+241,2026-03-10,demo,commodity,Gula Pasir,Indonesia,16318.5,,price,IDR,,2026-07-07 04:13:35,Rp16.318
+361,2026-03-10,demo,idx_stock,BBCA.JK,Indonesia,9657.6,,price,IDR,,2026-07-07 04:13:35,Rp9.658
+481,2026-03-10,demo,idx_stock,TLKM.JK,Indonesia,3059.7,,price,IDR,,2026-07-07 04:13:35,Rp3.060
+2,2026-03-11,demo,commodity,Beras Premium,Indonesia,15114.56,,price,IDR,,2026-07-07 04:13:35,Rp15.115
+122,2026-03-11,demo,commodity,Minyak Goreng,Indonesia,17335.68,,price,IDR,,2026-07-07 04:13:35,Rp17.336
+242,2026-03-11,demo,commodity,Gula Pasir,Indonesia,17248.54,,price,IDR,,2026-07-07 04:13:35,Rp17.249
+362,2026-03-11,demo,idx_stock,BBCA.JK,Indonesia,9236.06,,price,IDR,,2026-07-07 04:13:35,Rp9.236
+482,2026-03-11,demo,idx_stock,TLKM.JK,Indonesia,3234.41,,price,IDR,,2026-07-07 04:13:35,Rp3.234
+3,2026-03-12,demo,commodity,Beras Premium,Indonesia,15224.9,,price,IDR,,2026-07-07 04:13:35,Rp15.225
+123,2026-03-12,demo,commodity,Minyak Goreng,Indonesia,17463.11,,price,IDR,,2026-07-07 04:13:35,Rp17.463
+243,2026-03-12,demo,commodity,Gula Pasir,Indonesia,15974.63,,price,IDR,,2026-07-07 04:13:35,Rp15.975
+363,2026-03-12,demo,idx_stock,BBCA.JK,Indonesia,9217.02,,price,IDR,,2026-07-07 04:13:35,Rp9.217
+483,2026-03-12,demo,idx_stock,TLKM.JK,Indonesia,3229.09,,price,IDR,,2026-07-07 04:13:35,Rp3.229
+4,2026-03-13,demo,commodity,Beras Premium,Indonesia,15663.1,,price,IDR,,2026-07-07 04:13:35,Rp15.663
+124,2026-03-13,demo,commodity,Minyak Goreng,Indonesia,18134.88,,price,IDR,,2026-07-07 04:13:35,Rp18.135
+244,2026-03-13,demo,commodity,Gula Pasir,Indonesia,16640.3,,price,IDR,,2026-07-07 04:13:35,Rp16.640
+364,2026-03-13,demo,idx_stock,BBCA.JK,Indonesia,9846.43,,price,IDR,,2026-07-07 04:13:35,Rp9.846
+484,2026-03-13,demo,idx_stock,TLKM.JK,Indonesia,3082.53,,price,IDR,,2026-07-07 04:13:35,Rp3.083
