@@ -1,0 +1,1 @@
+# IndoMarket Insight application package
