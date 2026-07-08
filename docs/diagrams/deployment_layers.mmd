@@ -1,0 +1,16 @@
+flowchart TB
+    Internet --> CDN[CDN/WAF]
+    CDN --> LB[Load Balancer]
+    LB --> Nginx[Nginx / Ingress]
+    Nginx --> FE[Frontend Replicas]
+    Nginx --> API[API Replicas]
+    API --> Workers[Worker Pool]
+    FE --> API
+    API --> Cache[Redis Cache]
+    API --> DB[(PostgreSQL)]
+    Workers --> DB
+    Workers --> ObjectStorage[(S3/GCS/Azure Blob/MinIO)]
+    API --> Metrics[Prometheus]
+    FE --> Logs[Central Logs/Sentry]
+    API --> Logs
+    Workers --> Logs

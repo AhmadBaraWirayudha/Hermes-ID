@@ -1,0 +1,13 @@
+flowchart LR
+    User[User / Analyst] --> Frontend[Streamlit Frontend]
+    User --> API[FastAPI API]
+    Frontend --> Backend[Backend Services]
+    API --> Backend
+    Backend --> DB[(SQLite / PostgreSQL)]
+    Backend --> Obj[(Raw/Processed/Object Storage)]
+    Backend --> Redis[(Redis Cache/Queue)]
+    Backend --> External[Allowed External Sources / Google Trends]
+    Backend --> Reports[PDF/TeX/XLSX/CSV Reports]
+    Ops[Ops / CI-CD] --> Deploy[Docker/K8s/Systemd]
+    Deploy --> Frontend
+    Deploy --> API

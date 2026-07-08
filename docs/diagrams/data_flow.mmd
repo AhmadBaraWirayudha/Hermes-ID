@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant S as Source/API/CSV/Google Trends
+    participant Scraper as Scraper/Importer
+    participant Raw as data/raw
+    participant Norm as Normalizer
+    participant DB as SQLite/PostgreSQL
+    participant Proc as data/processed
+    participant UI as Dashboard/API
+    participant Report as Reports
+
+    S->>Scraper: Fetch/import data
+    Scraper->>Raw: Save raw artifact
+    Scraper->>Norm: Normalize columns
+    Norm->>DB: Upsert observations
+    Norm->>Proc: Save processed CSV
+    UI->>DB: Query observations
+    UI->>Report: Generate PDF/TeX/XLSX/CSV
+    Report->>Proc: Save report artifacts
