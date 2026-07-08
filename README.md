@@ -1,4 +1,4 @@
-# IndoMarket Insight v2 - Indonesian Market Intelligence App
+# Indonesian Market Intelligence App
 
 ## Simple overview
 
