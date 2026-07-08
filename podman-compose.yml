@@ -1,0 +1,16 @@
+services:
+  indomarket-insight:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: localhost/indomarket-insight:local
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data:Z
+      - ./models:/app/models:Z
+      - ./logs:/app/logs:Z
+      - ./config:/app/config:Z
+      - ./backups:/app/backups:Z
+    environment:
+      - TZ=Asia/Jakarta

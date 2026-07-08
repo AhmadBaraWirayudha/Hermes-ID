@@ -1,0 +1,74 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: localhost/indomarket-insight:prod
+    command: streamlit run app/main.py --server.address=0.0.0.0 --server.port=8501 --server.headless=true
+    env_file: .env
+    volumes:
+      - ./data:/app/data:Z
+      - ./models:/app/models:Z
+      - ./logs:/app/logs:Z
+      - ./config:/app/config:Z
+      - ./backups:/app/backups:Z
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  api:
+    image: localhost/indomarket-insight:prod
+    build:
+      context: .
+      dockerfile: Containerfile
+    command: uvicorn app.api:api --host 0.0.0.0 --port 8000
+    env_file: .env
+    volumes:
+      - ./data:/app/data:Z
+      - ./models:/app/models:Z
+      - ./logs:/app/logs:Z
+      - ./config:/app/config:Z
+      - ./backups:/app/backups:Z
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  nginx:
+    image: docker.io/nginx:1.27-alpine
+    depends_on:
+      - frontend
+      - api
+    ports:
+      - "80:80"
+    volumes:
+      - ./infra/nginx/nginx.conf:/etc/nginx/nginx.conf:ro,Z
+
+  redis:
+    image: docker.io/redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data:Z
+
+  prometheus:
+    image: docker.io/prom/prometheus:latest
+    volumes:
+      - ./infra/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro,Z
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: docker.io/grafana/grafana:latest
+    volumes:
+      - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro,Z
+      - ./infra/grafana/dashboards:/var/lib/grafana/dashboards:ro,Z
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+
+volumes:
+  redis_data:

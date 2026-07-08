@@ -1,0 +1,9 @@
+[project]
+name = "indomarket-insight"
+version = "0.8.0"
+description = "Indonesian market intelligence dashboard with scraping, ML, reports, API, and calculators"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["app"]
