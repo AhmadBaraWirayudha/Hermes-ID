@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: indomarket-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: indomarket-frontend }
+  template:
+    metadata:
+      labels: { app: indomarket-frontend }
+    spec:
+      containers:
+        - name: frontend
+          image: your-registry/indomarket-insight:latest
+          command: ["streamlit", "run", "app/main.py", "--server.address=0.0.0.0", "--server.port=8501", "--server.headless=true"]
+          ports: [{ containerPort: 8501 }]
+          readinessProbe:
+            httpGet: { path: /_stcore/health, port: 8501 }
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: indomarket-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: indomarket-api }
+  template:
+    metadata:
+      labels: { app: indomarket-api }
+    spec:
+      containers:
+        - name: api
+          image: your-registry/indomarket-insight:latest
+          command: ["uvicorn", "app.api:api", "--host", "0.0.0.0", "--port", "8000"]
+          ports: [{ containerPort: 8000 }]
+          readinessProbe:
+            httpGet: { path: /health, port: 8000 }

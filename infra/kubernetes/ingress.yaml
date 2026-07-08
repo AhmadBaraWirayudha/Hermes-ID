@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: indomarket-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/limit-rps: "10"
+spec:
+  rules:
+    - host: indomarket.example.com
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service: { name: indomarket-api, port: { number: 8000 } }
+          - path: /
+            pathType: Prefix
+            backend:
+              service: { name: indomarket-frontend, port: { number: 8501 } }

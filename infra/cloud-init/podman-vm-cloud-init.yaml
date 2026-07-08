@@ -1,0 +1,13 @@
+#cloud-config
+package_update: true
+packages:
+  - podman
+  - python3-pip
+  - git
+  - curl
+runcmd:
+  - python3 -m pip install --user podman-compose
+  - mkdir -p /opt/indomarket_insight
+  - echo "Upload or git clone the project into /opt/indomarket_insight, then run scripts/podman_run_prod.sh" > /opt/indomarket_insight/NEXT_STEPS.txt
+  - loginctl enable-linger ubuntu || true
+final_message: "Podman VM bootstrap complete. Copy project to /opt/indomarket_insight and run scripts/podman_run_prod.sh"

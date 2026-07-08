@@ -1,0 +1,13 @@
+[Unit]
+Description=IndoMarket Insight API
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/indomarket_insight
+EnvironmentFile=/opt/indomarket_insight/.env
+ExecStart=/opt/indomarket_insight/.venv/bin/uvicorn app.api:api --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

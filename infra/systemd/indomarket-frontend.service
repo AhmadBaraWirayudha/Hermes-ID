@@ -1,0 +1,13 @@
+[Unit]
+Description=IndoMarket Insight Streamlit Frontend
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/indomarket_insight
+EnvironmentFile=/opt/indomarket_insight/.env
+ExecStart=/opt/indomarket_insight/.venv/bin/streamlit run app/main.py --server.address=0.0.0.0 --server.port=8501 --server.headless=true
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

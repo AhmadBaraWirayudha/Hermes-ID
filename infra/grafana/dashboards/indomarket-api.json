@@ -1,0 +1,18 @@
+{
+  "title": "IndoMarket API",
+  "schemaVersion": 39,
+  "panels": [
+    {
+      "type": "stat",
+      "title": "API Requests",
+      "targets": [{"expr": "sum(indomarket_api_requests_total)"}],
+      "gridPos": {"x":0,"y":0,"w":6,"h":4}
+    },
+    {
+      "type": "stat",
+      "title": "Observation Rows",
+      "targets": [{"expr": "indomarket_observation_rows"}],
+      "gridPos": {"x":6,"y":0,"w":6,"h":4}
+    }
+  ]
+}

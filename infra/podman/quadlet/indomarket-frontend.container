@@ -1,0 +1,24 @@
+[Unit]
+Description=IndoMarket Insight Frontend Container
+After=network-online.target
+Wants=network-online.target
+
+[Container]
+Image=localhost/indomarket-insight:latest
+ContainerName=indomarket-frontend
+Network=indomarket.network
+PublishPort=8501:8501
+Volume=%h/indomarket_insight/data:/app/data:Z
+Volume=%h/indomarket_insight/models:/app/models:Z
+Volume=%h/indomarket_insight/logs:/app/logs:Z
+Volume=%h/indomarket_insight/config:/app/config:Z
+Volume=%h/indomarket_insight/backups:/app/backups:Z
+Environment=TZ=Asia/Jakarta
+Exec=streamlit run app/main.py --server.address=0.0.0.0 --server.port=8501 --server.headless=true
+
+[Service]
+Restart=always
+TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target
